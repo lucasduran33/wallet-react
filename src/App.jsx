@@ -4,6 +4,7 @@ import {makeStyles} from '@material-ui/core'
 import Header from './Components/Headers'
 import HomePage from './Pages/HomePage'
 import CoinsPage from './Pages/CoinsPage'
+
 const useStyles = makeStyles(()=>({
   App: {
     backgroundColor:"#14161a",
