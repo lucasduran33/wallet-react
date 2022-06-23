@@ -101,7 +101,7 @@ export default function CoinsTable() {
                         fontFamily: "Montserrat",
                       }}
                       key={head}
-                      align={head === "Coin" ? "" : "right"}
+                      align={head === "Coin" ? "left" : "right"}
                     >
                       {head}
                     </TableCell>
@@ -187,20 +187,17 @@ export default function CoinsTable() {
           )}
         </TableContainer>
 
-        {/* Comes from @material-ui/lab */}
         <Pagination
-          count={(handleSearch()?.length / 10).toFixed(0)}
+          count={10}
+          //(handleSearch()?.length / 10).toFixed(0)
           style={{
             padding: 20,
             width: "100%",
             display: "flex",
             justifyContent: "center",
           }}
-          classes={{ ul:{
-            "& .MuiPaginationItem-root": {
-              color: "gold",
-            },
-          } }}
+        
+      
           onChange={(_, value) => {
             setPage(value);
             window.scroll(0, 450);
