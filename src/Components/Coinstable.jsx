@@ -14,8 +14,7 @@ import {
   TableHead,
   TableContainer,
   Table,
-  Paper,
-} from "@material-ui/core";
+  Paper } from "@material-ui/core";
 import axios from "axios";
 import { CoinList } from "../config/api";
 import {  useNavigate } from "react-router-dom";

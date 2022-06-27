@@ -33,7 +33,7 @@ style={{
     marginBottom:15,
     fontFamily:'Montserrat'
 }}>
-Crypto Hunter
+Find you Crypto 
 </Typography>
 <Typography
 variant='subtitle2'
