@@ -42,8 +42,8 @@ const Carousel = () => {
 fetchTrendingCoins()
 
   },[currency])
-  const items = trending.map((coin) => {
-   let profit = coin.price_change_percentage_24h >= 0;
+  const items = trending?.map((coin) => {
+   let profit = coin?.price_change_percentage_24h >= 0;
 
 
     return(
@@ -51,7 +51,7 @@ fetchTrendingCoins()
       className={classes.carouselItems} to={`/coins/${coin.id}`}>
        <img
           src={coin?.image}
-          alt={coin.name}
+          alt={coin?.name}
           height="80"
           style={{ marginBottom: 10 }}
         />
